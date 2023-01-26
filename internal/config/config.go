@@ -1,9 +1,9 @@
 package config
 
 import (
-	"github.com/zeromicro/go-zero/rest"
+	"github.com/zeromicro/go-zero/core/service"
 )
 
 type Config struct {
-	rest.RestConf
+	service.ServiceConf
 }
