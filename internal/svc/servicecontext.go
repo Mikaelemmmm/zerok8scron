@@ -16,11 +16,9 @@ type ServiceContext struct {
 
 func InitSvcCtx(c config.Config) {
 
-	once.Do(func() {
-		svcCtx = &ServiceContext{
-			Config: c,
-		}
-	})
+	svcCtx = &ServiceContext{
+		Config: c,
+	}
 
 }
 
